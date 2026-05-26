@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Mobile-first base styles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: 'Nunito', 'Inter', system-ui, sans-serif;
+}
+
+/* Mobile viewport wrapper */
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100svh;
+}
