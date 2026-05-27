@@ -119,7 +119,7 @@ export default function RestaurantProfilePage() {
             {
               icon: <IconUserReviewsR />,
               label: 'User Reviews',
-              onClick: () => {},
+              onClick: () => navigate('/restaurant-portal/user-reviews'),
             },
           ]}
         />

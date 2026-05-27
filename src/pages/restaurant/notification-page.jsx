@@ -5,17 +5,58 @@ import RestaurantBottomNav from '../../components/restaurant/restaurant-bottom-n
 
 /** Sample notification data */
 const NOTIFICATIONS = [
-  { id: '01', name: 'Tanbir Ahmed', action: 'Placed a new order', time: '20 min ago' },
-  { id: '02', name: 'Salim Smith', action: 'left a 5 star review', time: '20 min ago' },
-  { id: '03', name: 'Royal Bengol', action: 'agreed to cancel', time: '20 min ago' },
-  { id: '04', name: 'Pabel Vuiya', action: 'Placed a new order', time: '20 min ago' },
+  {
+    id: '01',
+    name: 'Tanbir Ahmed',
+    action: 'Placed a new order',
+    time: '20 min ago',
+  },
+  {
+    id: '02',
+    name: 'Salim Smith',
+    action: 'left a 5 star review',
+    time: '20 min ago',
+  },
+  {
+    id: '03',
+    name: 'Royal Bengol',
+    action: 'agreed to cancel',
+    time: '20 min ago',
+  },
+  {
+    id: '04',
+    name: 'Pabel Vuiya',
+    action: 'Placed a new order',
+    time: '20 min ago',
+  },
 ];
 
 /** Sample messages data */
 const MESSAGES = [
-  { id: '01', name: 'Royal Parvej', preview: 'Sounds awesome!', time: '19:37', unread: 1, isOnline: true },
-  { id: '02', name: 'Tanbir Ahmed', preview: 'When will my order arrive?', time: '18:45', unread: 2, isOnline: false },
-  { id: '03', name: 'Salim Smith', preview: 'Thank you so much!', time: '17:20', unread: 0, isOnline: true },
+  {
+    id: '01',
+    name: 'Royal Parvej',
+    preview: 'Sounds awesome!',
+    time: '19:37',
+    unread: 1,
+    isOnline: true,
+  },
+  {
+    id: '02',
+    name: 'Tanbir Ahmed',
+    preview: 'When will my order arrive?',
+    time: '18:45',
+    unread: 2,
+    isOnline: false,
+  },
+  {
+    id: '03',
+    name: 'Salim Smith',
+    preview: 'Thank you so much!',
+    time: '17:20',
+    unread: 0,
+    isOnline: true,
+  },
 ];
 
 /** Single message row with online indicator and unread badge */
@@ -33,8 +74,12 @@ function MessageItem({ name, preview, time, unread, isOnline, showDivider }) {
 
         {/* Name + preview */}
         <div className="flex-1 min-w-0">
-          <p className="text-[16px] font-semibold text-[#32343E] leading-6">{name}</p>
-          <p className="text-[12px] text-[#373738] leading-5 truncate">{preview}</p>
+          <p className="text-[16px] font-semibold text-[#32343E] leading-6">
+            {name}
+          </p>
+          <p className="text-[12px] text-[#373738] leading-5 truncate">
+            {preview}
+          </p>
         </div>
 
         {/* Time + unread badge */}
@@ -86,7 +131,7 @@ export default function NotificationPage() {
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Header */}
-      <div className="flex items-center gap-5 px-6 pt-[50px] pb-4">
+      <div className="flex items-center gap-5 px-6 pt-6 pb-4">
         <button
           onClick={() => navigate(-1)}
           className="w-[45px] h-[45px] rounded-full bg-[#ECF0F4] flex items-center justify-center shrink-0"
@@ -152,7 +197,9 @@ export default function NotificationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div className="shrink-0"><RestaurantBottomNav /></div>
+      <div className="shrink-0">
+        <RestaurantBottomNav />
+      </div>
     </div>
   );
 }

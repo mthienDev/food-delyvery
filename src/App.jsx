@@ -46,6 +46,7 @@ import RestaurantFoodDetail from './pages/restaurant/food-detail-page';
 import WithdrawSuccessfulPage from './pages/restaurant/withdraw-successful-page';
 import RestaurantPersonalInfoPage from './pages/restaurant/personal-info-page';
 import RestaurantNotificationPage from './pages/restaurant/notification-page';
+import UserReviewsPage from './pages/restaurant/user-reviews-page';
 
 /**
  * Lần đầu mở app (chưa có splashShown) → navigate sang /splash.
@@ -146,6 +147,7 @@ export default function App() {
               <Route path="withdraw-success" element={<WithdrawSuccessfulPage />} />
               <Route path="personal-info" element={<RestaurantPersonalInfoPage />} />
               <Route path="notifications" element={<RestaurantNotificationPage />} />
+              <Route path="user-reviews" element={<UserReviewsPage />} />
             </Route>
           </Route>
 
