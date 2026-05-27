@@ -56,7 +56,7 @@ export default function RestaurantProfilePage() {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-svh flex flex-col">
       {/* ── Orange header ── */}
       <div className="bg-primary rounded-b-[25px] px-6 pt-12.5 pb-7.5">
         {/* Top row: back + title */}
@@ -88,7 +88,7 @@ export default function RestaurantProfilePage() {
       </div>
 
       {/* ── Menu sections ── */}
-      <div className="px-6 py-5 flex flex-col gap-3.5">
+      <div className="flex-1 px-6 py-5 flex flex-col gap-3.5">
         <MenuCard
           items={[
             {
@@ -136,7 +136,9 @@ export default function RestaurantProfilePage() {
         />
       </div>
 
-      <RestaurantBottomNav />
+      <div className="sticky bottom-0 mt-auto">
+        <RestaurantBottomNav />
+      </div>
     </div>
   );
 }
