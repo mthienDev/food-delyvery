@@ -1,5 +1,4 @@
-// Figma ref: node 602:670
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IconBack } from '../../components/ui/icons';
 import RestaurantBottomNav from '../../components/restaurant/restaurant-bottom-nav';

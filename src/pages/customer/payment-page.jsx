@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Payment Page — chọn phương thức thanh toán & xác nhận đơn hàng.
  * Route: /payment
- * Figma ref: Payment screen
  */
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -38,7 +37,6 @@ function CheckIcon() {
   );
 }
 
-// ── Decorative card illustration (Figma node 240:254) ─────────────────────────
 function CardIllustration() {
   return (
     <div
@@ -162,7 +160,6 @@ function PaymentMethodTab({ method, selected, onClick }) {
   );
 }
 
-// ── Empty card state (Figma node 240:254) ─────────────────────────────────────
 function EmptyCardState({ method }) {
   const label = METHODS.find(m => m.id === method)?.label ?? method;
   return (
@@ -180,7 +177,6 @@ function EmptyCardState({ method }) {
   );
 }
 
-// ── Chevron icon (Figma: Polygon1 rotated 180°) ───────────────────────────────
 function ChevronDownIcon() {
   return (
     <svg width="11" height="8" viewBox="0 0 11 8" fill="none">
@@ -195,7 +191,6 @@ function ChevronDownIcon() {
   );
 }
 
-// ── Saved card row (Figma node 38:562) ────────────────────────────────────────
 function CardRow({ card, selected, onSelect, onRemove, onEdit }) {
   const digits = card.cardNumber.replace(/\s/g, '');
   const last3 = digits.slice(-3);

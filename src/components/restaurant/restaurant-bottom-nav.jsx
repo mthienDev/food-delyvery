@@ -1,5 +1,4 @@
-// Figma ref: node 602:1518
-import { NavLink, useNavigate } from 'react-router-dom';
+﻿import { NavLink, useNavigate } from 'react-router-dom';
 import {
   IconGrid,
   IconHamburger,

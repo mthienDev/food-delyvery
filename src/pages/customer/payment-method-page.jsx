@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Payment Method Page — quản lý phương thức thanh toán (không có checkout).
  * Route: /payment-method
- * Figma ref: Payment screen (variant: manage only)
  */
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

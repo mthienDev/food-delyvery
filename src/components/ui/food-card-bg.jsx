@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FoodCardBg — barrel-shaped SVG card background with drop shadow.
  * Dùng chung cho food item cards (search-page, category-page, ...).
  * @param {string} filterId — unique ID tránh SVG filter ID collision
@@ -13,7 +13,6 @@ export default function FoodCardBg({ filterId }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        {/* offset(12,12) blur=15 rgba(150,150,154,.15) — Figma filter */}
         <filter
           id={filterId}
           x="0"

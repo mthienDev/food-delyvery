@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Restaurant Detail Page — hero slider, info, menu tabs, food grid.
  * Route: /restaurant/:id
- * Figma ref: restaurant-detail screen
  */
 import { useState, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';

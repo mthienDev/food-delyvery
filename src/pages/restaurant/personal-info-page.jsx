@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Restaurant Personal Info page — hiển thị thông tin cá nhân nhà hàng.
- * Figma ref: Restaurant Portal → Personal Info
  */
 import { useNavigate } from 'react-router-dom';
 import useAuthStore from '../../store/auth-store';

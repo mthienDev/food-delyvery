@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Profile/Menu page icons — colored SVG icons for each menu item.
- * Figma node ref: 223:4665 (Menu page)
  */
 
 export function IconPersonalInfo() {

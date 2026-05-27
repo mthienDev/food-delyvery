@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Restaurant profile page menu icons — 24×24 colored SVGs.
  * No background built-in; container provides background color.
- * Figma ref: node 602:751
  */
 
 /** Orange person icon — Personal Info */

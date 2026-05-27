@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Customer Search Page — search restaurants & food items.
- * Figma ref: Search screen
  */
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -189,7 +188,6 @@ function PopularFastFood({ items }) {
             <div key={item.id} className="flex flex-col cursor-pointer" onClick={() => navigate(`/food/${item.id}`)}>
               <div className="relative z-10 self-center w-30.5 h-21 rounded-[15px] bg-[#98a8b8]" />
 
-              {/* Card container — h-25.5(102px) khớp Figma card body height */}
               <div className="-mt-10.5 relative h-25.5">
                 <FoodCardBg filterId={sid} />
 

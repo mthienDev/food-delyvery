@@ -1,6 +1,5 @@
-/**
+﻿/**
  * FoodCard — 2-column grid card dùng trong restaurant-detail và category page.
- * Figma ref: node 212:256 (Food Delivery App, Restaurant View_02)
  *
  * Props:
  *   id            — food id

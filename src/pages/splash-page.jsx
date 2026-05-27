@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MobileFrame from '../components/ui/mobile-frame';
 import useAuthStore from '../store/auth-store';
@@ -9,7 +9,6 @@ import decorateBottomRight from '../assets/splash-decorate-1.png';
 
 /**
  * Splash Page — hiện lần đầu vào session, tự redirect sang onboarding sau ~2.8s.
- * Figma ref: node 38:1923
  */
 export default function SplashPage() {
   const navigate = useNavigate();

@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Edit Profile page — form chỉnh sửa thông tin cá nhân.
- * Figma node ref: 190:628
  */
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

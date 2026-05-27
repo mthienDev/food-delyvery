@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OfferPopup — hiển thị popup khuyến mãi khi lần đầu vào trang Home mỗi session.
 
  * 
@@ -25,7 +25,6 @@ export default function OfferPopup() {
   return (
     <Dialog.Root open={open} onOpenChange={handleOpenChange}>
       <Dialog.Portal>
-        {/* Overlay — dùng màu Figma rgba(39,63,85,0.67) */}
         <Dialog.Overlay className="fixed inset-0 z-50 bg-[rgba(39,63,85,0.67)]" />
 
         <Dialog.Content

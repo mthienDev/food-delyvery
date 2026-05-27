@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Forgot Password Page — Trang quên mật khẩu.
- * Figma ref: Forgot Password
  * Layout: hero tối (#121223) + form card trắng rounded-top (tương tự Login)
  */
 

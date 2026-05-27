@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Mock food/dish data — restaurantId maps to mock-restaurants.js id slugs.
  * Prices in USD. Fields: id, restaurantId, name, price, category, isBestseller.
  */
@@ -147,7 +147,6 @@ const ING = {
 }
 
 const CATEGORY_DETAIL = {
-  // Burger — Figma reference design (salt+chicken+alliums+spice+veggies+nuts)
   Burger:  { sizes: ['10"', '14"', '16"'],   defSizeIdx: 1, ingredients: [ING.salt, ING.chicken, ING.onion, ING.garlic, ING.pepper, ING.ginger, ING.broccoli, ING.orange, ING.walnut] },
   // Pizza — classic toppings: garlic, onion, pepper, broccoli, salt
   Pizza:   { sizes: ['10"', '14"', '16"'],   defSizeIdx: 1, ingredients: [ING.garlic, ING.onion, ING.pepper, ING.broccoli, ING.salt, ING.orange] },

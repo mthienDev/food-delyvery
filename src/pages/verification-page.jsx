@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Verification Page — Trang nhập mã OTP.
- * Figma ref: Verification
  * Layout: hero tối (#121223) + form card trắng rounded-top (tương tự Login)
  */
 

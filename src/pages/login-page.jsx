@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Login Page — Trang đăng nhập.
- * Figma ref: Log In_Empty
  * Layout: hero tối (#121223) + form card trắng rounded-top
  */
 

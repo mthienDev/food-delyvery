@@ -1,6 +1,5 @@
-/**
+﻿/**
  * My Address Page — danh sách địa chỉ giao hàng.
- * Figma node ref: 226:68
  * Route: /my-address
  */
 import { useNavigate } from 'react-router-dom';

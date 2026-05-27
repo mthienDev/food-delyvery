@@ -1,6 +1,5 @@
-/**
+﻿/**
  * RestaurantList — vertical list of open restaurant cards.
- * Figma ref: node 38:1277
  */
 import SectionHeader from '../../../components/ui/section-header';
 import {

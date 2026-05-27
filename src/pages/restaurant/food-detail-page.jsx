@@ -1,5 +1,4 @@
-/**
- * Restaurant Food Detail Page — Figma ref: node 602:851 "Chef Food Details"
+﻿/**
  * Route: /restaurant-portal/food/:id
  * Data: useFoodStore (restaurant's own menu) + useAuthStore (restaurant info)
  */

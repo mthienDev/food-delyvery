@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Withdraw Successful — xác nhận rút tiền thành công.
  * Route: /restaurant-portal/withdraw-success
- * Figma ref: node 602:733
  */
 import { useNavigate } from 'react-router-dom';
 

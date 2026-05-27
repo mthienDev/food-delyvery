@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Customer Menu/Profile page — hamburger menu drawer.
- * Figma node: 223:4665 (Menu)
  */
 import { useNavigate } from 'react-router-dom';
 import { IconChevronRight } from '../../components/ui/icons';

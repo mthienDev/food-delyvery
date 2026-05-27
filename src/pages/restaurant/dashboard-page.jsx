@@ -1,6 +1,5 @@
-/**
+﻿/**
  * Restaurant Dashboard — revenue stats, active orders, reviews, popular items.
- * Figma ref: node 602:1591
  * Drawer ref: node 602:1432
  */
 import { useState } from 'react';
@@ -59,7 +58,6 @@ function DashboardHeader({ location = 'Halal Lab office' }) {
   );
 }
 
-// ── Stat Card — Figma node 602:1587 ──────────────────────────────────────────
 function StatCard({ value, label, onClick }) {
   return (
     <button
@@ -244,7 +242,6 @@ function RevenueChart() {
 }
 
 // ── Reviews ───────────────────────────────────────────────────────────────────
-// Figma ref: node 602:1502
 function ReviewsCard() {
   return (
     <div className="bg-white rounded-2xl px-4 py-3.5 shadow-sm">
@@ -265,7 +262,6 @@ function ReviewsCard() {
   );
 }
 
-// ── Popular Items — Figma node 602:1511 ──────────────────────────────────────
 function PopularItemsRow({ items }) {
   const {
     ref,

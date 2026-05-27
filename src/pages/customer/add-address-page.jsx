@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Add Address Page — thêm địa chỉ giao hàng mới.
  * Route: /add-address
- * Figma ref: (add-address screen)
  */
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -78,7 +77,6 @@ function MapPlaceholder() {
 
       {/* Tooltip + pin */}
       <div className="absolute top-[38%] left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5">
-        {/* Tooltip — speech bubble với mũi tên xuống (Figma 224:143) */}
         <div className="flex flex-col items-center">
           <div className="bg-[#32343E] rounded-lg px-3 py-1.5 whitespace-nowrap">
             <span className="text-white text-[12px] font-medium">

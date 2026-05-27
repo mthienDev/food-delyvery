@@ -1,5 +1,4 @@
-/**
- * Ingredient icon map — SVG assets from Figma (node 229:341).
+﻿/**
  * Keyed by ingredient icon slug used in mock-foods.js.
  */
 import saltIcon from './salt.svg';

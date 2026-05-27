@@ -1,5 +1,4 @@
-/** Restaurant Profile — earnings overview + account menu */
-// Figma ref: node 602:751
+﻿/** Restaurant Profile — earnings overview + account menu */
 
 import { useNavigate } from 'react-router-dom';
 import RestaurantBottomNav from '../../components/restaurant/restaurant-bottom-nav';

@@ -1,6 +1,5 @@
-/**
+﻿/**
  * HomeHeader — top bar: hamburger menu / delivery location / cart badge.
- * Figma node: 38:1333 (Home V.3 → Top)
  */
 import { useNavigate } from 'react-router-dom';
 import {

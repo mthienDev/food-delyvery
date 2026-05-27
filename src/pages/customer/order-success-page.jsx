@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Order Success Page — thông báo thanh toán thành công.
  * Route: /order-success
- * Figma ref: node 190:885
  */
 import { useNavigate } from 'react-router-dom';
 

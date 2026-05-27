@@ -1,6 +1,5 @@
-/**
+﻿/**
  * FilterPopup — centered dialog filter cho restaurant detail.
- * Figma node: 602:363 | Primitive: @radix-ui/react-dialog
  */
 import * as Dialog from '@radix-ui/react-dialog';
 import { useState } from 'react';

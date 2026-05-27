@@ -1,7 +1,6 @@
-/**
+﻿/**
  * CategoryList — horizontal scrollable grid of food categories.
  * Clicking a card navigates to /category/:id.
- * Figma ref: node 103:413
  */
 import { useNavigate } from 'react-router-dom';
 import SectionHeader from '../../../components/ui/section-header';

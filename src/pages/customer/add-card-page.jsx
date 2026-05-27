@@ -1,7 +1,6 @@
-/**
+﻿/**
  * Add Card Page — nhập thông tin thẻ tín dụng/ghi nợ.
  * Route: /add-card
- * Figma ref: node 190:1773
  */
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';

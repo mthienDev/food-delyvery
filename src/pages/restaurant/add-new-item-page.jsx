@@ -1,5 +1,4 @@
-// Figma ref: node 602:1027
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { IconBack } from '../../components/ui/icons';
 import { INGREDIENT_ICONS } from '../../assets/icons/ingredients/index.js';

@@ -1,11 +1,10 @@
-import { useCallback, useRef, useState } from 'react';
+﻿import { useCallback, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MobileFrame from '../components/ui/mobile-frame';
 import useAuthStore from '../store/auth-store';
 
 /**
  * Onboarding Page — 4 bước giới thiệu trước khi vào app.
- * Figma ref: Onboarding_01 node 154:23
  */
 
 const SLIDES = [
