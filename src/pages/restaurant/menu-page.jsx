@@ -91,7 +91,7 @@ export default function MenuPage() {
 
   return (
     <div className="flex flex-col h-svh bg-white">
-      <div className="flex-1 min-h-0 overflow-y-auto">
+      <div className="flex-1 min-h-0 overflow-y-scroll">
         {/* Header */}
         <div className="flex items-center gap-4 px-5 pt-6 pb-4">
           <button
@@ -141,7 +141,9 @@ export default function MenuPage() {
         </div>
       </div>
 
-      <RestaurantBottomNav />
+      <div className="shrink-0">
+        <RestaurantBottomNav />
+      </div>
     </div>
   );
 }

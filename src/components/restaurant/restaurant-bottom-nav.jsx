@@ -29,8 +29,8 @@ const LEFT_ITEMS = [
 /** Right-side nav items (Orders/bell, Profile) */
 const RIGHT_ITEMS = [
   {
-    to: '/restaurant-portal/orders',
-    label: 'Orders',
+    to: '/restaurant-portal/notifications',
+    label: 'Notifications',
     Icon: ({ color }) => <IconBell color={color} />,
   },
   {

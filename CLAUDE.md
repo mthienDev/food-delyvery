@@ -38,7 +38,7 @@ export default function MyPage() {
 
 - `BrowserRouter` + `react-router-dom` v6, cấu hình trong `src/App.jsx`.
 - Customer routes: `/`, `/search`, `/cart`, `/orders`, `/profile`, `/menu`, `/personal-info`, `/edit-profile`, `/my-address`, `/category/:id`, `/restaurant/:id`, `/food/:id`, `/tracking/:id`, `/payment`, `/add-card`, `/order-success`
-- Restaurant portal routes: `/restaurant-portal`, `/restaurant-portal/menu`, `/restaurant-portal/orders`, `/restaurant-portal/profile`, `/restaurant-portal/add-item`, `/restaurant-portal/food/:id`
+- Restaurant portal routes: `/restaurant-portal`, `/restaurant-portal/menu`, `/restaurant-portal/orders`, `/restaurant-portal/profile`, `/restaurant-portal/add-item`, `/restaurant-portal/food/:id`, `/restaurant-portal/withdraw-success`, `/restaurant-portal/personal-info`, `/restaurant-portal/notifications`
 - Auth routes: `/login`, `/signup`, `/forgot-password`, `/verification`
 - Splash screen: `/splash` — hiển thị lần đầu mỗi session, tự redirect về `/` sau 2.8s.
 

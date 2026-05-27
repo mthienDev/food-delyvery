@@ -192,7 +192,7 @@ export default function RestaurantFoodDetailPage() {
         </button>
       </div>
 
-      <div className="flex-1 min-h-0 overflow-y-auto no-scrollbar">
+      <div className="flex-1 min-h-0 overflow-y-scroll no-scrollbar">
         <FoodImageCarousel category={food.category} foodName={food.name} delivery={food.delivery} />
 
         <div className="px-6 pt-5 pb-8">
@@ -255,7 +255,7 @@ export default function RestaurantFoodDetailPage() {
         </div>
       </div>
 
-      <RestaurantBottomNav />
+      <div className="shrink-0"><RestaurantBottomNav /></div>
     </div>
   );
 }

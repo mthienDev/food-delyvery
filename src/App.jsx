@@ -43,6 +43,9 @@ import RestaurantOrders from './pages/restaurant/orders-page';
 import RestaurantProfile from './pages/restaurant/profile-page';
 import AddNewItemPage from './pages/restaurant/add-new-item-page';
 import RestaurantFoodDetail from './pages/restaurant/food-detail-page';
+import WithdrawSuccessfulPage from './pages/restaurant/withdraw-successful-page';
+import RestaurantPersonalInfoPage from './pages/restaurant/personal-info-page';
+import RestaurantNotificationPage from './pages/restaurant/notification-page';
 
 /**
  * Lần đầu mở app (chưa có splashShown) → navigate sang /splash.
@@ -140,6 +143,9 @@ export default function App() {
               <Route path="profile" element={<RestaurantProfile />} />
               <Route path="add-item" element={<AddNewItemPage />} />
               <Route path="food/:id" element={<RestaurantFoodDetail />} />
+              <Route path="withdraw-success" element={<WithdrawSuccessfulPage />} />
+              <Route path="personal-info" element={<RestaurantPersonalInfoPage />} />
+              <Route path="notifications" element={<RestaurantNotificationPage />} />
             </Route>
           </Route>
 

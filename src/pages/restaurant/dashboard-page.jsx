@@ -14,7 +14,10 @@ import {
 import RestaurantBottomNav from '../../components/restaurant/restaurant-bottom-nav';
 import OrderDrawer from '../../components/restaurant/order-drawer';
 import { foods } from '../../data/mock-foods';
-import { runningOrders, orderRequests } from '../../data/mock-restaurant-orders';
+import {
+  runningOrders,
+  orderRequests,
+} from '../../data/mock-restaurant-orders';
 import useDragScroll from '../../hooks/use-drag-scroll';
 
 // ── Header ────────────────────────────────────────────────────────────────────
@@ -25,7 +28,7 @@ function DashboardHeader({ location = 'Halal Lab office' }) {
   return (
     <div className="flex items-center gap-4.5">
       <button
-        onClick={() => navigate('/restaurant-portal/menu')}
+        onClick={() => navigate('/restaurant-portal/profile')}
         className="shrink-0"
       >
         <IconMenu />
@@ -264,8 +267,15 @@ function ReviewsCard() {
 
 // ── Popular Items — Figma node 602:1511 ──────────────────────────────────────
 function PopularItemsRow({ items }) {
-  const { ref, onMouseDown, onMouseUp, onMouseMove, onMouseLeave, style, isDragging } =
-    useDragScroll();
+  const {
+    ref,
+    onMouseDown,
+    onMouseUp,
+    onMouseMove,
+    onMouseLeave,
+    style,
+    isDragging,
+  } = useDragScroll();
 
   return (
     <div
@@ -281,10 +291,16 @@ function PopularItemsRow({ items }) {
         <div
           key={food.id}
           className="shrink-0 w-37.5 h-38.25 rounded-xl overflow-hidden"
-          onClick={() => { if (isDragging()) return; }}
+          onClick={() => {
+            if (isDragging()) return;
+          }}
         >
           {food.image ? (
-            <img src={food.image} alt={food.name} className="w-full h-full object-cover" />
+            <img
+              src={food.image}
+              alt={food.name}
+              className="w-full h-full object-cover"
+            />
           ) : (
             <div className="w-full h-full bg-[#b8bcc8]" />
           )}
@@ -304,7 +320,9 @@ function PopularItems() {
     <div className="bg-white rounded-2xl p-4 shadow-sm">
       <div className="flex items-center justify-between mb-3">
         <p className="text-[14px] text-[#32343e]">Populer Items This Weeks</p>
-        <button className="text-[14px] text-[#fb6d3a] underline">See All</button>
+        <button className="text-[14px] text-[#fb6d3a] underline">
+          See All
+        </button>
       </div>
       <div className="flex flex-col gap-3">
         <PopularItemsRow items={row1} />
@@ -321,14 +339,14 @@ export default function DashboardPage() {
   const closeDrawer = () => setActiveDrawer(null);
 
   return (
-    <div className="flex flex-col h-svh bg-[#F7F8F9] relative">
+    <div className="flex flex-col h-svh bg-[#F7F8F9] relative overflow-hidden">
       {/* Fixed header — không scroll */}
       <div className="shrink-0 bg-[#F7F8F9] px-4 py-6 z-10">
         <DashboardHeader />
       </div>
 
       {/* Scrollable content */}
-      <div className="flex-1 min-h-0 overflow-y-auto">
+      <div className="flex-1 min-h-0 overflow-y-scroll">
         <div className="flex flex-col gap-4 px-4 pb-6">
           <div className="flex gap-3">
             <StatCard
@@ -348,7 +366,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      <RestaurantBottomNav />
+      <div className="shrink-0"><RestaurantBottomNav /></div>
 
       {/* Running Orders drawer */}
       <OrderDrawer
