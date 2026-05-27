@@ -11,6 +11,47 @@ const NOTIFICATIONS = [
   { id: '04', name: 'Pabel Vuiya', action: 'Placed a new order', time: '20 min ago' },
 ];
 
+/** Sample messages data */
+const MESSAGES = [
+  { id: '01', name: 'Royal Parvej', preview: 'Sounds awesome!', time: '19:37', unread: 1, isOnline: true },
+  { id: '02', name: 'Tanbir Ahmed', preview: 'When will my order arrive?', time: '18:45', unread: 2, isOnline: false },
+  { id: '03', name: 'Salim Smith', preview: 'Thank you so much!', time: '17:20', unread: 0, isOnline: true },
+];
+
+/** Single message row with online indicator and unread badge */
+function MessageItem({ name, preview, time, unread, isOnline, showDivider }) {
+  return (
+    <>
+      <div className="flex items-center gap-4 py-4 px-6">
+        {/* Avatar + online dot */}
+        <div className="relative shrink-0">
+          <div className="w-[50px] h-[50px] rounded-full bg-[#98A8B8]" />
+          {isOnline && (
+            <span className="absolute bottom-0 right-0.5 w-3 h-3 rounded-full bg-[#4CAF50] border-2 border-white" />
+          )}
+        </div>
+
+        {/* Name + preview */}
+        <div className="flex-1 min-w-0">
+          <p className="text-[16px] font-semibold text-[#32343E] leading-6">{name}</p>
+          <p className="text-[12px] text-[#373738] leading-5 truncate">{preview}</p>
+        </div>
+
+        {/* Time + unread badge */}
+        <div className="flex flex-col items-end gap-1.5 shrink-0">
+          <p className="text-[9px] text-[#373738]">{time}</p>
+          {unread > 0 && (
+            <span className="w-5 h-5 rounded-full bg-[#FF7622] flex items-center justify-center text-[11px] font-semibold text-white leading-none">
+              {unread}
+            </span>
+          )}
+        </div>
+      </div>
+      {showDivider && <div className="h-px bg-[#F0F4F9] mx-6" />}
+    </>
+  );
+}
+
 /** Single notification row with optional bottom divider */
 function NotificationItem({ name, action, time, showDivider }) {
   return (
@@ -91,15 +132,23 @@ export default function NotificationPage() {
         />
       </div>
 
-      {/* Notification list */}
+      {/* List */}
       <div className="flex-1 min-h-0 overflow-y-scroll">
-        {NOTIFICATIONS.map((item, i) => (
-          <NotificationItem
-            key={item.id}
-            {...item}
-            showDivider={i < NOTIFICATIONS.length - 1}
-          />
-        ))}
+        {activeTab === 'notifications'
+          ? NOTIFICATIONS.map((item, i) => (
+              <NotificationItem
+                key={item.id}
+                {...item}
+                showDivider={i < NOTIFICATIONS.length - 1}
+              />
+            ))
+          : MESSAGES.map((item, i) => (
+              <MessageItem
+                key={item.id}
+                {...item}
+                showDivider={i < MESSAGES.length - 1}
+              />
+            ))}
       </div>
 
       {/* Bottom nav */}
