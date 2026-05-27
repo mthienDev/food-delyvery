@@ -4,8 +4,8 @@
  */
 export default function MobileFrame({ children }) {
   return (
-    <div className="w-full max-w-[390px] min-h-svh mx-auto bg-white relative overflow-hidden shadow-2xl">
+    <div className="w-full max-w-150 min-h-svh mx-auto bg-white relative overflow-hidden shadow-2xl **:no-scrollbar">
       {children}
     </div>
-  )
+  );
 }

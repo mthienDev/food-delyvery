@@ -1,14 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-sen: 'Sen', sans-serif;
+  --default-font-family: var(--font-sen);
+
+  --color-primary: #FF7622;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+@utility no-scrollbar {
+  &::-webkit-scrollbar { display: none; }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dialog center-scale animation (used by FilterPopup / Radix Dialog) */
+@keyframes dialogIn {
+  from { opacity: 0; transform: scale(0.95) translateY(4px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);   }
+}
+@keyframes dialogOut {
+  from { opacity: 1; transform: scale(1)    translateY(0);   }
+  to   { opacity: 0; transform: scale(0.95) translateY(4px); }
+}
+@keyframes overlayIn  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes overlayOut { from { opacity: 1; } to { opacity: 0; } }
+
+@utility animate-dialog-in  { animation: dialogIn  0.22s cubic-bezier(0.16,1,0.3,1); }
+@utility animate-dialog-out { animation: dialogOut 0.18s ease-in; }
+@utility animate-overlay-in  { animation: overlayIn  0.2s ease-out; }
+@utility animate-overlay-out { animation: overlayOut 0.18s ease-in; }
 
 /* Mobile-first base styles */
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Prevent iOS Safari auto-zoom on input focus.
+   iOS zooms in when input font-size < 16px; this rule forces minimum 16px.
+   Must be outside @layer so it beats Tailwind utility classes (layered styles
+   always lose to unlayered styles with equal or lower specificity). */
+input:not([type='checkbox']):not([type='radio']):not([type='range']),
+textarea,
+select {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   background: #f5f5f5;
-  font-family: 'Nunito', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sen);
 }
 
 /* Mobile viewport wrapper */
